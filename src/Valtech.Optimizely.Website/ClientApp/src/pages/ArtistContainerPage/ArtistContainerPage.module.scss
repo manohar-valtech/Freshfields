@@ -1,0 +1,53 @@
+@use 'mixins/breakpoints';
+@use 'mixins/typography';
+
+.page {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    align-self: center;
+    box-sizing: border-box;
+    display: block;
+    max-width: var(--container-max-width);
+    padding: var(--space-m);
+    text-transform: none;
+    width: 100%;
+
+    @include breakpoints.m {
+        margin-inline: var(--space-l);
+    }
+}
+
+.subtitle {
+    @include typography.heading-m;
+
+    background: var(--color-static-pink-o24);
+    margin: 0;
+    padding-block: 0.3125rem 0.4375rem;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+}
+.letters {
+    margin: 0;
+    padding: 0;
+
+    li {
+        list-style: none;
+    }
+}
+
+.artists {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-block: 2rem;
+    max-width: var(--container-max-width);
+    padding: 0;
+    row-gap: 2rem;
+    width: 100%;
+}

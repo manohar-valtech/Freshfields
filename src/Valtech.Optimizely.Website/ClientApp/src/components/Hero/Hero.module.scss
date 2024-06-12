@@ -1,0 +1,33 @@
+@use 'mixins/typography';
+
+.wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 31.25rem;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+.content {
+    z-index: var(--z-index-nav);
+}
+
+.title {
+    @include typography.heading-xl;
+
+    text-align: center;
+}
+
+.subtitle {
+    @include typography.heading-xs;
+
+    text-align: center;
+}
+
+.image {
+    background-size: cover;
+    inset: 0;
+    position: absolute;
+}

@@ -1,0 +1,70 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>Valtech.Optimizely.Website</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <IsPackable>false</IsPackable>
+    <ClientAppRoot>ClientApp\</ClientAppRoot>
+    <LangVersion>latest</LangVersion>
+    <UserSecretsId>5ed9b0c1-52dd-4a95-9d04-a41703bf1512</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EPiServer.CMS" Version="12.29.1" />
+    <PackageReference Include="EPiServer.CMS.AspNetCore" Version="12.21.5" />
+    <PackageReference Include="EPiServer.CMS.AspNetCore.Templating" Version="12.21.5" />
+    <PackageReference Include="EPiServer.CMS.AspNetCore.Routing" Version="12.21.5" />
+    <PackageReference Include="EPiServer.CMS.AspNetCore.HtmlHelpers" Version="12.21.5" />
+    <PackageReference Include="EPiServer.CMS.AspNetCore.TagHelpers" Version="12.21.5" />
+    <PackageReference Include="EPiServer.CMS.AspNetCore.Mvc" Version="12.21.5" />
+    <PackageReference Include="EPiServer.CMS.Core" Version="12.21.5" />
+    <PackageReference Include="EPiServer.Hosting" Version="12.21.5" />
+    <PackageReference Include="EPiServer.Framework" Version="12.21.5" />
+    <PackageReference Include="EPiServer.Framework.AspNetCore" Version="12.21.5" />
+    <PackageReference Include="EPiServer.ContentDeliveryApi.Cms" Version="3.11.0" />
+    <PackageReference Include="EPiServer.Forms" Version="5.8.2" />
+    <PackageReference Include="Geta.Optimizely.Sitemaps" Version="3.1.2" />
+    <PackageReference Include="Stott.Optimizely.RobotsHandler" Version="2.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Valtech.Optimizely.Headless\Valtech.Optimizely.Headless.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!--
+    Do not publish the client app source files, but do show them in the project files list.
+    We will publish them in the target 'BuildClientApp'.
+    -->
+    <Content Remove="$(ClientAppRoot)**" />
+    <None Remove="$(ClientAppRoot)**" />
+    <None Include="$(ClientAppRoot)**" Exclude="$(ClientAppRoot)node_modules\**" />
+  </ItemGroup>
+
+  <Target Name="BuildClientApp" AfterTargets="ComputeFilesToPublish">
+    <!--
+    As part of publishing, ensure the client app is freshly built in production mode.
+    Alternatively, the client app can be built in a separate step in a CI/CD build pipeline,
+    then remove this target and make sure the client app files are included when deploying.
+    -->
+    <Exec WorkingDirectory="$(ClientAppRoot)" Command="npm install" />
+    <Exec WorkingDirectory="$(ClientAppRoot)" Command="npm run build" />
+
+    <!--
+    Move the production client app to wwwroot so dotnet can serve the static files.
+    This is not neccessary, but otherwise they will be served by Node.js proxied
+    through dotnet.
+    -->
+    <ItemGroup>
+      <DistFiles Include="$(ClientAppRoot).output\**" />
+      <ResolvedFileToPublish Include="@(DistFiles-&gt;'%(FullPath)')" Exclude="@(ResolvedFileToPublish)">
+        <RelativePath>wwwroot\%(RecursiveDir)%(FileName)%(Extension)</RelativePath>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      </ResolvedFileToPublish>
+    </ItemGroup>
+  </Target>
+
+</Project>

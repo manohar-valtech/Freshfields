@@ -1,0 +1,20 @@
+{
+    "trailingComma": "es5",
+    "tabWidth": 4,
+    "singleQuote": true,
+    "plugins": [
+        "prettier-plugin-css-order",
+        "@trivago/prettier-plugin-sort-imports"
+    ],
+    "cssDeclarationSorterOrder": "alphabetical",
+    "cssDeclarationSorterKeepOverrides": true,
+    "importOrder": [
+        "^@/components/(.*)$",
+        "^@/pages/(.*)$",
+        "^@/(.*)$",
+        "^[./]((?!scss).)*$",
+        "^[./](.*)?(.scss)$"
+    ],
+    "importOrderSeparation": true,
+    "importOrderSortSpecifiers": true
+}

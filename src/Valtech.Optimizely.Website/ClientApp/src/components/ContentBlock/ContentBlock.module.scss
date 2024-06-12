@@ -1,0 +1,38 @@
+@use 'mixins/breakpoints';
+
+.container {
+    --image-order: 1;
+    --content-order: 2;
+
+    align-content: center;
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-l);
+
+    @include breakpoints.m {
+        align-items: center;
+    }
+
+    &--two-col {
+        @include breakpoints.m {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    &--flip {
+        @include breakpoints.m {
+            --image-order: 2;
+            --content-order: 1;
+        }
+    }
+}
+
+.image {
+    order: var(--image-order);
+}
+
+.content {
+    order: var(--content-order);
+}

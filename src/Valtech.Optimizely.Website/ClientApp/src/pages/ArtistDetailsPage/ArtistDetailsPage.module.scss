@@ -1,0 +1,43 @@
+@use 'mixins/breakpoints';
+@use 'mixins/typography';
+
+.page {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: var(--space-xl);
+    max-width: var(--container-max-width);
+}
+
+.image {
+    display: block;
+    max-height: 95vh;
+    object-fit: cover;
+    width: 100%;
+}
+
+.title {
+    margin-top: var(--space-l);
+}
+
+.information {
+    padding-inline: var(--space-l);
+
+    @include breakpoints.xl {
+        padding-inline: 0;
+    }
+}
+
+.image {
+    padding-top: 5rem;
+
+    img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+.stage {
+    @include typography.text-l;
+}

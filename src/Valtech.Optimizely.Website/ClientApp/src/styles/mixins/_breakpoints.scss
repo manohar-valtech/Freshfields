@@ -1,0 +1,66 @@
+// - Breakpoint Widths -
+$breakpointS: 20rem;
+$breakpointM: 48rem;
+$breakpointL: 62rem;
+$breakpointXL: 85.3125rem;
+$breakpointXXL: 105rem;
+
+@mixin s {
+    @media (width >= $breakpointS) {
+        @content;
+    }
+}
+
+@mixin s-max {
+    @media (width <= $breakpointS) {
+        @content;
+    }
+}
+
+@mixin m {
+    @media (width >= $breakpointM) {
+        @content;
+    }
+}
+
+@mixin m-max {
+    @media (width <= $breakpointM) {
+        @content;
+    }
+}
+
+@mixin l {
+    @media (width >= $breakpointL) {
+        @content;
+    }
+}
+
+@mixin l-max {
+    @media (width <= $breakpointL) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media (width >= $breakpointXL) {
+        @content;
+    }
+}
+
+@mixin xl-max {
+    @media (width <= $breakpointXL) {
+        @content;
+    }
+}
+
+@mixin xxl {
+    @media (width >= $breakpointXXL) {
+        @content;
+    }
+}
+
+@mixin xxl-max {
+    @media (width <= $breakpointXXL) {
+        @content;
+    }
+}

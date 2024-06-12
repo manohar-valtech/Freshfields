@@ -1,0 +1,13 @@
+@use 'mixins/typography';
+
+.container {
+    align-content: center;
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-l);
+}
+
+.description {
+    @include typography.text-l;
+}

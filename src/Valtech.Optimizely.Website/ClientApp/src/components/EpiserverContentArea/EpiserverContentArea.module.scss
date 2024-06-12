@@ -1,0 +1,30 @@
+@use 'mixins/breakpoints';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-l);
+    margin-inline: auto;
+    max-width: var(--container-max-width);
+    padding-inline: var(--space-m);
+
+    @include breakpoints.m {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        padding: var(--space-l);
+    }
+}
+
+.block {
+    grid-column: auto / span 6;
+
+    &--half {
+        grid-column: auto / span 3;
+    }
+    &--one-third {
+        grid-column: auto / span 2;
+    }
+    &--two-thirds {
+        grid-column: auto / span 4;
+    }
+}

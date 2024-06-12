@@ -1,0 +1,17 @@
+@use 'mixins/breakpoints';
+
+.link {
+    display: block;
+}
+
+.wrapper {
+    aspect-ratio: 1;
+    height: 3.125rem;
+    margin: var(--space-m);
+    z-index: var(--z-index-nav);
+
+    @include breakpoints.m {
+        height: 4rem;
+        margin: var(--space-l);
+    }
+}

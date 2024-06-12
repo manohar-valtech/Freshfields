@@ -1,0 +1,29 @@
+.wrapper {
+    margin: 1rem;
+}
+
+.border {
+    border-bottom: 1px solid var(--color-static-white-o50);
+    margin: 1rem 0;
+}
+
+.container {
+    display: grid;
+    gap: var(--space-l);
+
+    &--half {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    &--one-third {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    &--two-third {
+        grid-template-columns: repeat(3, 1fr);
+
+        > div {
+            grid-column: 1 / span 2;
+        }
+    }
+}

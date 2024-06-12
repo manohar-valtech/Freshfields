@@ -1,0 +1,46 @@
+@use 'mixins/breakpoints';
+@use 'mixins/typography';
+
+.wrapper {
+    list-style: none;
+}
+
+.link {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-inline: var(--space-m);
+    text-decoration: none;
+
+    @include breakpoints.m {
+        margin-inline: var(--space-l);
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.image {
+    aspect-ratio: 1;
+    border-radius: 50%;
+    height: 2.5rem;
+    margin-right: 1rem;
+    object-fit: cover;
+    overflow: hidden;
+    width: 2.5rem;
+
+    @include breakpoints.m {
+        height: 4rem;
+        margin-right: 2rem;
+        width: 4rem;
+    }
+}
+
+.text {
+    @include typography.text-l;
+
+    flex-grow: 1;
+    margin: 0;
+    text-decoration: none;
+}

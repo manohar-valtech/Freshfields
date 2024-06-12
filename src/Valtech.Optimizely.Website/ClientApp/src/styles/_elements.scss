@@ -1,0 +1,80 @@
+/**
+* Elements
+*/
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+hr {
+    border: 0;
+    border-top: 1px dashed var(--color-line);
+    display: block;
+    height: 1px;
+    margin: 1em 0;
+    padding: 0;
+}
+
+figure {
+    margin: 0;
+}
+
+/**
+* Tables
+*/
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0 0 1em;
+    max-width: 100%;
+    width: 100%;
+
+    th,
+    td {
+        padding: 0.5em 0.7em 0.5em 0.2em;
+        text-align: left;
+        vertical-align: top;
+    }
+
+    th {
+        border-bottom: 1px solid #eee;
+        color: #666;
+        font-size: 0.8em;
+        text-align: left;
+    }
+}
+
+ol,
+ul,
+dl {
+    margin-bottom: 1em;
+}
+
+// reset margin-bottom on nested combinations of "ol ul"
+ol,
+ul {
+    & & {
+        margin-bottom: 0;
+    }
+}
+
+.pullquote,
+blockquote {
+    border-left: none;
+    font-family: var(--font-secondary);
+    font-size: 3.125rem;
+    font-weight: bold;
+    line-height: 1;
+    margin: 5rem auto 3.125rem;
+    max-width: 63rem;
+    padding-left: 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 90%;
+}
+
+address {
+    font-style: normal;
+}

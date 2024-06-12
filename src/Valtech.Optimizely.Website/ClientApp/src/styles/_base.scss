@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow:400,700|Ubuntu:400,700');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+::selection {
+    background: var(--color-text-select);
+    text-shadow: none;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    font-weight: 400;
+    height: 100%;
+    line-height: 1;
+    margin: 0;
+}
+
+main {
+    background-image: url('/wave.svg');
+    background-position: right top;
+    background-repeat: no-repeat;
+    margin: 5em auto;
+}

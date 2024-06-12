@@ -1,0 +1,5 @@
+@use 'mixins/typography';
+
+.link {
+    @include typography.link;
+}

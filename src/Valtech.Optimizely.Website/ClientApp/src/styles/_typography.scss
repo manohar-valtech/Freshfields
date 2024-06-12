@@ -1,0 +1,39 @@
+@use 'mixins/typography';
+
+:root {
+    --font-primary: 'barlow', 'Helvetica', 'Arial', sans-serif;
+    --font-secondary: 'ubuntu', 'Helvetica', 'Arial', serif;
+}
+
+h1 {
+    @include typography.heading-xl;
+}
+
+h2 {
+    @include typography.heading-l;
+}
+
+h3 {
+    @include typography.heading-m;
+}
+
+h4 {
+    @include typography.heading-s;
+}
+
+h5,
+h6 {
+    @include typography.heading-xs;
+}
+
+h6 {
+    @include typography.heading-xxs;
+}
+
+a {
+    @include typography.link;
+}
+
+p {
+    @include typography.text;
+}

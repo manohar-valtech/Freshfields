@@ -1,0 +1,51 @@
+@use 'mixins/breakpoints';
+
+.wrapper {
+    position: absolute;
+    right: var(--space-m);
+    top: var(--space-m);
+    z-index: var(--z-index-nav);
+
+    @include breakpoints.s {
+        right: var(--space-l);
+        top: var(--space-l);
+    }
+}
+
+.languages {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-m);
+    margin-block: 0.75rem;
+
+    @include breakpoints.s {
+        flex-direction: row;
+        gap: var(--space-l);
+    }
+}
+
+.language {
+    position: relative;
+
+    &--active {
+        border-bottom: 4px solid var(--color-static-turquoise);
+
+        @include breakpoints.s {
+            border-size: 2px;
+        }
+    }
+}
+
+.link {
+    cursor: pointer;
+    display: block;
+    font: 0.625rem var(--font-primary);
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    user-select: none;
+
+    @include breakpoints.s {
+        font-size: 0.8125rem;
+    }
+}

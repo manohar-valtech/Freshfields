@@ -1,0 +1,50 @@
+@use 'mixins/typography';
+
+.fieldset {
+    align-self: flex-start;
+    border: none;
+    border: 1px dashed var(--color-field-border);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-s);
+    padding: 1rem;
+}
+
+.label {
+    @include typography.field-label;
+}
+
+.image {
+    align-self: flex-start;
+    margin-bottom: 0.5rem;
+}
+
+.input {
+    @include typography.text;
+
+    align-self: flex-start;
+    border: 1px solid var(--color-field-border);
+    border-radius: 0.5rem;
+    color: var(--color-field-color);
+    display: block;
+    margin: 0;
+
+    &:hover,
+    &:focus-visible {
+        border-color: var(--color-field-border-hover);
+    }
+
+    &--error {
+        border-color: var(--color-field-border-error);
+
+        &:hover,
+        &:focus-visible {
+            border-color: var(--color-field-border-error-hover);
+        }
+    }
+}
+
+.error {
+    color: var(--color-field-color-error);
+}

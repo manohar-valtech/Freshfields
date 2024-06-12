@@ -1,0 +1,59 @@
+:root {
+    // Static colors
+    --color-static-black: #000;
+    --color-static-white: #fff;
+    --color-static-white-o50: rgba(255 255 255 / 50%);
+    --color-static-neutral-100: #eee;
+    --color-static-neutral-400: #bbb;
+    --color-static-neutral-400: #ccc;
+    --color-static-neutral-500: #aaa;
+    --color-static-neutral-600: #888;
+    --color-static-neutral-700: #666;
+    --color-static-neutral-800: #444;
+    --color-static-neutral-900: #222;
+    --color-static-blue: #1a237e;
+    --color-static-turquoise: #41fff5;
+    --color-static-pink: #ec407a;
+    --color-static-pink-o24: rgb(236 64 122 / 24%);
+    --color-static-red: #ff0000;
+    --color-static-red-o0: rgba(255 0 0 / 0%);
+    --color-static-red-o35: rgba(255 0 0 / 35%);
+
+    // Color system
+    --color-background: var(--color-static-blue);
+    --color-gradient-background: linear-gradient(
+        to bottom,
+        var(--color-static-red-o0) 0%,
+        var(--color-static-red-o35) 100%
+    );
+    --color-link: var(--color-static-white);
+    --color-link-hover: var(--color-static-neutral-100);
+    --color-line: var(--color-static-neutral-100);
+    --color-text: var(--color-static-white);
+    --color-text-light: var(--color-static-neutral-500);
+    --color-text-select: var(--color-static-pink-o24);
+    --color-button-background: var(--color-static-turquoise);
+    --color-button-color: var(--color-static-blue);
+    --color-button-border: var(--color-static-turquoise);
+    --color-button-background-hover: var(--color-static-blue);
+    --color-button-color-hover: var(--color-static-turquoise);
+    --color-button-border-hover: var(--color-static-turquoise);
+    --color-button-background-disabled: var(--color-static-neutral-700);
+    --color-button-color-disabled: var(--color-static-white);
+    --color-button-border-disabled: var(--color-static-neutral-700);
+    --color-button-outline-background: var(--color-static-blue);
+    --color-button-outline-color: var(--color-static-turquoise);
+    --color-button-outline-border: var(--color-static-turquoise);
+    --color-button-outline-background-hover: var(--color-static-turquoise);
+    --color-button-outline-color-hover: var(--color-static-blue);
+    --color-button-outline-border-hover: var(--color-static-turquoise);
+    --color-button-outline-background-disabled: var(--color-static-neutral-700);
+    --color-button-outline-color-disabled: var(--color-static-white);
+    --color-button-outline-border-disabled: var(--color-static-neutral-700);
+    --color-field-border: var(--color-static-white);
+    --color-field-border-hover: var(--color-static-turquoise);
+    --color-field-border-error: var(--color-static-pink);
+    --color-field-border-error-hover: var(--color-static-white);
+    --color-field-color: var(--color-static-white);
+    --color-field-color-error: var(--color-static-pink);
+}

@@ -1,0 +1,21 @@
+.wrapper {
+    background-image: var(--color-gradient-background);
+}
+
+.waves {
+    align-items: center;
+    background-image: url('/pattern-wave.svg');
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: var(--container-max-width-s);
+    padding: 1rem;
+    text-align: center;
+}
+
+.text {
+    margin: 0;
+}

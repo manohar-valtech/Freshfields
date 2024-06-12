@@ -1,0 +1,5 @@
+@use 'mixins/typography';
+
+.number {
+    @include typography.text-l;
+}

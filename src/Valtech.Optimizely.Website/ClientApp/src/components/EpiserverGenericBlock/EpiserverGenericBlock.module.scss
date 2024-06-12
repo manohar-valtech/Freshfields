@@ -1,0 +1,18 @@
+@use 'mixins/typography';
+
+.container {
+    border: 1px dashed var(--color-static-white);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-l);
+    padding: var(--space-m);
+}
+
+.text {
+    @include typography.text-l;
+}
+
+.code {
+    overflow: hidden;
+    white-space: pre-wrap;
+}
