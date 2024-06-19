@@ -28,3 +28,5 @@ pnpm-debug.log*
 # Docker msssql folder
 mssql
 /.gitignore
+/src/Freshfields.Optimizely.Website/App_Data/freshfields.mdf
+/src/Freshfields.Optimizely.Website/App_Data/freshfields_log.ldf
