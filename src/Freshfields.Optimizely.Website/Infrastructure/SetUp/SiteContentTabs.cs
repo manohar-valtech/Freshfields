@@ -13,8 +13,8 @@ public static class SiteContentTabs
     [Display(Order = 700)]
     public const string Seo = nameof(Seo);
 
-    [Display(Order = 800)]
-    public const string SiteSettings = nameof(SiteSettings);
+    //[Display(Order = 800)]
+    //public const string SiteSettings = nameof(SiteSettings);
 
     [Display(Order = 900)]
     public const string Settings = SystemTabNames.Settings;
