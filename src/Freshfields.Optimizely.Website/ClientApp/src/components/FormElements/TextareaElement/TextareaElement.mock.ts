@@ -2,10 +2,10 @@ import { ContextMode } from '@episerver/content-delivery';
 
 
 
-import TextareaElementProps from './TextareaElementProps';
+import TextareaElementProps from './TextAreaProps';
 
 
-const defaultTextarea TextareaElementProps = {
+const defaultTextarea: TextareaElementProps = {
     content: {
         elementName: 'TextareaElement',
         label: 'Default',

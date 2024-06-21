@@ -2,7 +2,7 @@ using System.Diagnostics;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
-namespace Freshfields.Optimizely.Headless.Infrastructure.NodeJs;
+namespace Freshfields.Headless.Infrastructure.NodeJs;
 
 /// <summary>
 /// Basic sub-process governor to start the Node.js process and

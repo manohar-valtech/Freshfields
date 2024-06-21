@@ -17,7 +17,8 @@ const meta: Meta<typeof TextboxElement> = {
                 { type: 'value', message: 'Not ok' },
                 { shouldFocus: true }
             );
-        return <TextboxElement control={control} {...args} />;
+        //return <TextboxElement control={control} {...args} />;
+        return <TextboxElement {...args} />;
     },
 };
 

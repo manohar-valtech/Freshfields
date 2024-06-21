@@ -1,4 +1,4 @@
-namespace Freshfields.Optimizely.Website.Models.Blocks;
+namespace Freshfields.Web.Models.Blocks;
 
 [ContentType(
     DisplayName = "Buy Ticket Block",

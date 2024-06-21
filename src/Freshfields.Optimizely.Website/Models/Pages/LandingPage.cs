@@ -1,8 +1,8 @@
 using EPiServer.Forms.Implementation.Elements;
-using Freshfields.Optimizely.Website.Models.Blocks;
-using Freshfields.Optimizely.Website.Models.Media;
+using Freshfields.Web.Models.Blocks;
+using Freshfields.Web.Models.Media;
 
-namespace Freshfields.Optimizely.Website.Models.Pages;
+namespace Freshfields.Web.Models.Pages;
 
 [ContentType(
     DisplayName = "Landing Page",

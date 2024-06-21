@@ -17,7 +17,8 @@ const meta: Meta<typeof TextareaElement> = {
                 { type: 'value', message: 'Not ok' },
                 { shouldFocus: true }
             );
-        return <TextareaElement control={control} {...args} />;
+        //return <TextareaElement control={control} {...args} />;
+        return <TextareaElement  {...args} />;
     },
 };
 
@@ -40,13 +41,13 @@ export const Disabled: Story = {
 };
 
 export const Phone: Story = {
-    args: mockdata.phone,
+    args: mockdata.placeHolder,
 };
 
 export const Number: Story = {
-    args: mockdata.number,
+    args: mockdata.placeHolder,
 };
 
 export const Password: Story = {
-    args: mockdata.password,
+    args: mockdata.placeHolder,
 };

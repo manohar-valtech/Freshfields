@@ -2,7 +2,7 @@ using EPiServer.ContentApi.Core.Serialization;
 using EPiServer.ContentApi.Core.Serialization.Models;
 using EPiServer.Core;
 
-namespace Freshfields.Optimizely.Headless.Infrastructure.Serialization.Mappers;
+namespace Freshfields.Headless.Infrastructure.Serialization.Mappers;
 
 public class ContentApiMapper : BaseContentApiMapper<IContentData, ContentApiModel>
 {

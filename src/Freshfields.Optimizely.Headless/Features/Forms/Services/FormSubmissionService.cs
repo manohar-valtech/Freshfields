@@ -7,7 +7,7 @@ using EPiServer.Forms.Core.Models.Internal;
 using EPiServer.Forms.Implementation.Elements;
 using Microsoft.AspNetCore.Http;
 
-namespace Freshfields.Optimizely.Headless.Features.Forms.Services;
+namespace Freshfields.Headless.Features.Forms.Services;
 
 /// <summary>
 /// Wrapper around the DataSubmissionService that allows us to set the correct user on the submission.

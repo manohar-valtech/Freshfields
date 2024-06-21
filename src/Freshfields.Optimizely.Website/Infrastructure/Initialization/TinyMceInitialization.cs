@@ -1,6 +1,6 @@
 using EPiServer.Cms.TinyMce.Core;
 
-namespace Freshfields.Optimizely.Website.Infrastructure.Initialization;
+namespace Freshfields.Web.Infrastructure.Initialization;
 
 public static class TinyMceInitialization
 {

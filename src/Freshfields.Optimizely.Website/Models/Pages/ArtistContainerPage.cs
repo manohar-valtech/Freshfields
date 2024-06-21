@@ -1,4 +1,4 @@
-namespace Freshfields.Optimizely.Website.Models.Pages;
+namespace Freshfields.Web.Models.Pages;
 
 [ContentType(
     DisplayName = "Artist Container Page",

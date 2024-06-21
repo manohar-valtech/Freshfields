@@ -56,7 +56,7 @@ const defaultTextfield: TextFieldProps = {
 
 const error: TextFieldProps = {
     ...defaultTextfield,
-    error: true,
+    //error: true,
 };
 
 const disabled: TextFieldProps = {
@@ -66,24 +66,24 @@ const disabled: TextFieldProps = {
 
 const placeHolder: TextFieldProps = {
     ...defaultTextfield,
-    placeHolder: 'Placeholder',
+    //placeHolder: 'Placeholder',
 };
 
 const number: TextFieldProps = {
     ...defaultTextfield,
-    inputMode: 'numeric',
-    type: 'number',
+    //inputMode: 'numeric',
+    //type: 'number',
 };
 
 const password: TextFieldProps = {
     ...defaultTextfield,
-    type: 'password',
+    //type: 'password',
 };
 
 const phone: TextFieldProps = {
     ...defaultTextfield,
-    inputMode: 'tel',
-    type: 'tel',
+    //inputMode: 'tel',
+    //type: 'tel',
 };
 
 const mockdata = {

@@ -7,7 +7,7 @@ import classNames from '@/utils/classNames';
 import evaluteVisibilityFromDependencies from '@/utils/evaluteVisibilityFromDependencies';
 import generateValidationRules from '@/utils/generateValidationRules';
 
-import TextareaElementProps from './TextareaElementProps';
+import TextareaElementProps from './TextAreaProps';
 
 import styled from './TextareaElement.module.scss';
 
@@ -88,14 +88,14 @@ const TextareaElement = ({
                                 title={description}
                                 rows={rows}
                                 onFocus={(
-                                    event: React.FocusEvent<HTMLTextareaElementElement>
+                                    event: React.FocusEvent<HTMLTextAreaElement>
                                 ) => {
                                     if (onFocus) {
                                         onFocus(event);
                                     }
                                 }}
                                 onChange={(
-                                    event: React.ChangeEvent<HTMLTextareaElementElement>
+                                    event: React.ChangeEvent<HTMLTextAreaElement>
                                 ) => {
                                     field.onChange(event);
 

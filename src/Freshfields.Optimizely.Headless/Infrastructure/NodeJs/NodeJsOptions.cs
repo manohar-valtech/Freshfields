@@ -1,6 +1,6 @@
 using EPiServer.ServiceLocation;
 
-namespace Freshfields.Optimizely.Headless.Infrastructure.NodeJs;
+namespace Freshfields.Headless.Infrastructure.NodeJs;
 
 /// <summary>
 /// Options for Node.js proxy.

@@ -1,4 +1,4 @@
-namespace Freshfields.Optimizely.Website.Infrastructure.SetUp;
+namespace Freshfields.Web.Infrastructure.SetUp;
 
 
 [GroupDefinitions]

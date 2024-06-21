@@ -1,6 +1,6 @@
 ﻿using EPiServer.ContentApi.Core.Serialization.Models;
 
-namespace Freshfields.Optimizely.Headless.Features.Forms.Models;
+namespace Freshfields.Headless.Features.Forms.Models;
 
 public class FormElementApiModel : ContentApiModel
 {

@@ -8,10 +8,10 @@ using EPiServer.Forms.Implementation.Elements;
 using EPiServer.Globalization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Freshfields.Optimizely.Headless.Features.Forms.Models;
-using Freshfields.Optimizely.Headless.Features.Forms.Services;
+using Freshfields.Headless.Features.Forms.Models;
+using Freshfields.Headless.Features.Forms.Services;
 
-namespace Freshfields.Optimizely.Headless.Features.Forms.Controllers.Api;
+namespace Freshfields.Headless.Features.Forms.Controllers.Api;
 
 [ApiController]
 [Route("{language}/api/forms")]

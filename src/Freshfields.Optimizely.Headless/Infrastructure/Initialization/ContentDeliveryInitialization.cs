@@ -7,10 +7,10 @@ using EPiServer.ServiceLocation;
 using EPiServer.Web;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
-using Freshfields.Optimizely.Headless.Infrastructure.Configuration;
-using Freshfields.Optimizely.Headless.Infrastructure.Serialization;
+using Freshfields.Headless.Infrastructure.Configuration;
+using Freshfields.Headless.Infrastructure.Serialization;
 
-namespace Freshfields.Optimizely.Headless.Infrastructure.Initialization;
+namespace Freshfields.Headless.Infrastructure.Initialization;
 
 [ModuleDependency(typeof(InitializationModule))]
 [ModuleDependency(typeof(ServiceContainerInitialization))]

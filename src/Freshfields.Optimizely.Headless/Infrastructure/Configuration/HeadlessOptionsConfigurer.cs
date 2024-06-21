@@ -1,7 +1,7 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
 
-namespace Freshfields.Optimizely.Headless.Infrastructure.Configuration;
+namespace Freshfields.Headless.Infrastructure.Configuration;
 
 public class HeadlessOptionsConfigurer : IConfigureOptions<HeadlessOptions>
 {

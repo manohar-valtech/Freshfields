@@ -1,4 +1,4 @@
-namespace Freshfields.Optimizely.Website;
+namespace Freshfields.Web;
 
 public class Program
 {

@@ -7,10 +7,10 @@ using EPiServer.Forms.Core.Validation.Internal;
 using EPiServer.Forms.Implementation.Elements.BaseClasses;
 using EPiServer.Forms.Implementation.Validation;
 using EPiServer.Forms.UI.SelectionFactory;
-using Freshfields.Optimizely.Headless.Features.Forms.Models;
-using Freshfields.Optimizely.Headless.Infrastructure.Serialization.Mappers;
+using Freshfields.Headless.Features.Forms.Models;
+using Freshfields.Headless.Infrastructure.Serialization.Mappers;
 
-namespace Freshfields.Optimizely.Headless.Features.Forms.Mappers;
+namespace Freshfields.Headless.Features.Forms.Mappers;
 
 public class ValidatableElementApiMapper : BaseContentApiMapper<ValidatableElementBlockBase, ValidatableElementApiModel>
 {

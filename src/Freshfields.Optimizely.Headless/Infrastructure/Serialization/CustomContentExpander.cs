@@ -4,9 +4,9 @@ using EPiServer.ContentApi.Core.Serialization.Models.Internal;
 using EPiServer.Core;
 using EPiServer.Web;
 using Microsoft.Extensions.Options;
-using Freshfields.Optimizely.Headless.Infrastructure.Configuration;
+using Freshfields.Headless.Infrastructure.Configuration;
 
-namespace Freshfields.Optimizely.Headless.Infrastructure.Serialization;
+namespace Freshfields.Headless.Infrastructure.Serialization;
 
 /// <summary>
 /// Component responsible for expanding content properties with support for nested Content Area items

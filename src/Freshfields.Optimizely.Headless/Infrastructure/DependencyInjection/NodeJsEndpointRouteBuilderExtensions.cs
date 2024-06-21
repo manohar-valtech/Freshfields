@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
-using Freshfields.Optimizely.Headless.Infrastructure.NodeJs;
+using Freshfields.Headless.Infrastructure.NodeJs;
 
-namespace Freshfields.Optimizely.Headless.Infrastructure.DependencyInjection;
+namespace Freshfields.Headless.Infrastructure.DependencyInjection;
 
 /// <summary>
 /// Extensions for <see cref="IEndpointRouteBuilder"/>.

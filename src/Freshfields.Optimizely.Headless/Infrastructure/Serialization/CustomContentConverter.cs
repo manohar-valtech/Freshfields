@@ -5,9 +5,9 @@ using EPiServer.ContentApi.Core.Serialization.Internal;
 using EPiServer.ContentApi.Core.Serialization.Models;
 using EPiServer.Core;
 using EPiServer.DataAbstraction;
-using Freshfields.Optimizely.Headless.Infrastructure.Serialization.Mappers;
+using Freshfields.Headless.Infrastructure.Serialization.Mappers;
 
-namespace Freshfields.Optimizely.Headless.Infrastructure.Serialization;
+namespace Freshfields.Headless.Infrastructure.Serialization;
 
 /// <summary>
 /// Replaces the default content converter to allow easier model conversion

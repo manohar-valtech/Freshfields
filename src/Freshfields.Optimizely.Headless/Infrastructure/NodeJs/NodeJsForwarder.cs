@@ -3,7 +3,7 @@ using System.Net;
 using Microsoft.AspNetCore.Http;
 using Yarp.ReverseProxy.Forwarder;
 
-namespace Freshfields.Optimizely.Headless.Infrastructure.NodeJs;
+namespace Freshfields.Headless.Infrastructure.NodeJs;
 
 /// <summary>
 /// This class acts as a simple wrapper around the <see cref="IHttpForwarder"/> from Yarp.

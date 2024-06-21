@@ -1,4 +1,4 @@
-namespace Freshfields.Optimizely.Website.Models.Media;
+namespace   Freshfields.Web.Models.Media;
 
 [ContentType(
     DisplayName = "Video File",

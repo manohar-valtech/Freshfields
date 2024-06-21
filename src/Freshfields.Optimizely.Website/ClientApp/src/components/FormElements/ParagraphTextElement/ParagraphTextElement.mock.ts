@@ -42,10 +42,11 @@ const mockdata: ParagraphTextElementProps = {
         created: new Date('2024-06-11T10:01:22Z'),
         startPublish: new Date('2024-06-11T10:01:22Z'),
         saved: new Date('2024-06-11T10:03:43Z'),
-        ParagraphTextElement:
-            '<p>Rich <strong>text </strong>with placeholders! </p>',
+        paragraphText: "<p>Rich <strong>text </strong>with placeholders! </p>",
+        
     },
     mode: ContextMode.Default,
+    
 };
 
 export default mockdata;

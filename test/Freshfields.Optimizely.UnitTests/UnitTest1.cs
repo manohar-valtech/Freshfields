@@ -1,4 +1,4 @@
-namespace Freshfields.Optimizely.UnitTests;
+namespace Freshfields.UnitTests;
 
 public class UnitTest1
 {

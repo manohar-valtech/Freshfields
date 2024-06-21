@@ -4,10 +4,10 @@ using EPiServer.ContentApi.Core.Configuration;
 using EPiServer.ContentApi.Core.DependencyInjection;
 using Geta.Optimizely.Sitemaps;
 using Stott.Optimizely.RobotsHandler.Configuration;
-using Freshfields.Optimizely.Headless.Infrastructure.DependencyInjection;
-using Freshfields.Optimizely.Website.Infrastructure.Initialization;
+using Freshfields.Web.Infrastructure.Initialization;
+using Freshfields.Headless.Infrastructure.DependencyInjection;
 
-namespace Freshfields.Optimizely.Website;
+namespace Freshfields.Web;
 
 public class Startup(IWebHostEnvironment webHostingEnvironment)
 {

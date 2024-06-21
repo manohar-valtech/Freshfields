@@ -1,10 +1,10 @@
 using Microsoft.Extensions.DependencyInjection;
-using Freshfields.Optimizely.Headless.Features.Forms.Mappers;
-using Freshfields.Optimizely.Headless.Features.Forms.Services;
-using Freshfields.Optimizely.Headless.Infrastructure.Configuration;
-using Freshfields.Optimizely.Headless.Infrastructure.Serialization.Mappers;
+using Freshfields.Headless.Features.Forms.Mappers;
+using Freshfields.Headless.Features.Forms.Services;
+using Freshfields.Headless.Infrastructure.Configuration;
+using Freshfields.Headless.Infrastructure.Serialization.Mappers;
 
-namespace Freshfields.Optimizely.Headless.Infrastructure.DependencyInjection;
+namespace Freshfields.Headless.Infrastructure.DependencyInjection;
 
 public static class ServiceCollectionExtensions
 {

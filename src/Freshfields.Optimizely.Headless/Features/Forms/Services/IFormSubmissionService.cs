@@ -1,7 +1,7 @@
 using System.Collections.Specialized;
 using EPiServer.Forms.Core.Models.Internal;
 
-namespace Freshfields.Optimizely.Headless.Features.Forms.Services;
+namespace Freshfields.Headless.Features.Forms.Services;
 
 public interface IFormSubmissionService
 {
